@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Andreeva Maria](https://up.htmlacademy.ru/adaptive/25/user/2002553).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797).
 
 ---
 
