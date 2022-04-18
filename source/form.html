@@ -6,7 +6,7 @@
   </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-img">
+    <a href="index.html" class="main-header__logo-img">
       <img src="img/logo-mobile.svg" width="33.32" height="37.61" alt="Логотип Cat Energy.">
     </a>
     <a class="main-header__logo-name">
@@ -44,15 +44,15 @@
           <div class="profile__form-container">
             <label class="profile__information-field">
               <span class="profile__content">Имя:<sup>*</sup></span>
-              <input class="profile__input" name="pet-name" value="Барсик" placeholder="Введите имя питомца" required>
+              <input class="profile__input" type="text" name="pet-name" value="Барсик" placeholder="Введите имя питомца" required>
             </label>
             <label class="profile__information-field">
               <span class="profile__content">Вес (кг):<sup>*</sup></span>
-              <input class="profile__input" name="pet-weight" value="7" placeholder="Введите вес питомца" required>
+              <input class="profile__input" type="number" name="pet-weight" value="7" placeholder="Введите вес питомца" required>
             </label>
             <label class="profile__information-field">
               <span class="profile__content">Возраст (лет):</span>
-              <input class="profile__input" name="pet-age" value="7" placeholder="Введите возраст питомца">
+              <input class="profile__input" type="number" name="pet-age" value="7" placeholder="Введите возраст питомца">
             </label>
             <ul class="profile-control">
               <li class="profile-control__list">
@@ -75,54 +75,60 @@
               </li>
             </ul>
           </div>
-          <div class="customers-contacts">
-            <p class="customers-contacts__title">Контактные данные (владельца кота)</p>
-            <div class="customers-contacts__form-container">
-              <label class="customers-contacts__information-field">
-                <span class="customers-contacts__content">E-mail:<sup>*</sup></span>
-                <input class="customers-contacts__input" type="email" value="kuklachev@gmail.com" placeholder="Введите электронную почту" required>
+          <div class="profile-contacts">
+            <p class="profile-contacts__title">Контактные данные (владельца кота)</p>
+            <div class="profile-contacts__form-container">
+              <label class="profile-contacts__information-field">
+                <span class="profile-contacts__content">E-mail:<sup>*</sup></span>
+                <input class="profile-contacts__input" type="email" value="kuklachev@gmail.com" placeholder="Введите электронную почту" required>
               </label>
-              <label class="customers-contacts__information-field">
-                <span class="customers-contacts__content">Телефон:<sup>*</sup></span>
-                <input class="customers-contacts__input" type="tel" value="8 (960) 900-60-90" placeholder="Введите номер телефона" required>
+              <label class="profile-contacts__information-field">
+                <span class="profile-contacts__content">Телефон:<sup>*</sup></span>
+                <input class="profile-contacts__input" type="tel" value="8 (960) 900-60-90" placeholder="Введите номер телефона" required>
               </label>
             </div>
           </div>
-          <div class="comment__wrapper">
-            <p class="comment__title">Комментарий</p>
-            <textarea name="comment" rows="6" cols="150">Расскажите обо всех повадках кота</textarea>
+          <div class="comment">
+            <div class="comment__wrapper">
+              <p class="comment__title">Комментарий</p>
+              <textarea name="comment" rows="6" cols="150">Расскажите обо всех повадках кота</textarea>
+            </div>
           </div>
-          <div class="additionally__wrapper">
-            <p class="additionally__title">Дополнительно</p>
-            <ul class="additionally-control">
-              <li class="additionally-control__list">
-                <label class="additionally-control__item">
-                  <input class="additionally-control__input" type="checkbox" name="types-additives" value="sweetener">
-                  <span class="additionally-control__content">Сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="additionally-control__list">
-                <label class="additionally-control__item">
-                  <input class="additionally-control__input" type="checkbox" name="types-additives" value="water">
-                  <span class="additionally-control__content">Питьевая вода</span>
-                </label>
-              </li>
-              <li class="additionally-control__list">
-                <label class="additionally-control__item">
-                  <input class="additionally-control__input" type="checkbox" name="types-additives" value="milk">
-                  <span class="additionally-control__content">Молоко</span>
-                </label>
-              </li>
-              <li class="additionally-control__list">
-                <label class="additionally-control__item">
-                  <input class="additionally-control__input" type="checkbox" name="types-additives" value="vitamins">
-                  <span class="additionally-control__content">Витамины</span>
-                </label>
-              </li>
-            </ul>
+          <div class="additionally">
+            <div class="additionally__wrapper">
+              <p class="additionally__title">Дополнительно</p>
+              <ul class="additionally__list additionally-control">
+                <li class="additionally-control__list">
+                  <label class="additionally-control__item">
+                    <input class="additionally-control__input" type="checkbox" name="types-additives" value="sweetener">
+                    <span class="additionally-control__content">Сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="additionally-control__list">
+                  <label class="additionally-control__item">
+                    <input class="additionally-control__input" type="checkbox" name="types-additives" value="water">
+                    <span class="additionally-control__content">Питьевая вода</span>
+                  </label>
+                </li>
+                <li class="additionally-control__list">
+                  <label class="additionally-control__item">
+                    <input class="additionally-control__input" type="checkbox" name="types-additives" value="milk">
+                    <span class="additionally-control__content">Молоко</span>
+                  </label>
+                </li>
+                <li class="additionally-control__list">
+                  <label class="additionally-control__item">
+                    <input class="additionally-control__input" type="checkbox" name="types-additives" value="vitamins">
+                    <span class="additionally-control__content">Витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
-          <button class="profile-button__submit" type="submit">Отправить заявку</button>
-          <p class="required-fields"><sup>*</sup> — Обязательные поля</p>
+          <div class="profile-button">
+            <button class="profile-button__submit" type="submit">Отправить заявку</button>
+          </div>
+          <p class="profile__required-fields"><sup>*</sup> — Обязательные поля</p>
         </form>
       </div>
     </section>
