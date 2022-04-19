@@ -48,13 +48,13 @@
             </label>
             <label class="profile__information-field">
               <span class="profile__content">Вес (кг):<sup>*</sup></span>
-              <input class="profile__input" type="number" name="pet-weight" value="7" placeholder="Введите вес питомца" required>
+              <input class="profile__input" type="text" name="pet-weight" value="7" placeholder="Введите вес питомца" required>
             </label>
             <label class="profile__information-field">
               <span class="profile__content">Возраст (лет):</span>
-              <input class="profile__input" type="number" name="pet-age" value="7" placeholder="Введите возраст питомца">
+              <input class="profile__input" type="text" name="pet-age" value="7" placeholder="Введите возраст питомца">
             </label>
-            <ul class="profile-control">
+            <ul class="profile__list profile-control">
               <li class="profile-control__list">
                 <label class="profile-control__item">
                   <input class="profile-control__input" type="radio" name="program-selection" value="weight-loss">
@@ -75,7 +75,7 @@
               </li>
             </ul>
           </div>
-          <div class="profile-contacts">
+          <div class="profile__contacts profile-contacts">
             <p class="profile-contacts__title">Контактные данные (владельца кота)</p>
             <div class="profile-contacts__form-container">
               <label class="profile-contacts__information-field">
@@ -88,13 +88,13 @@
               </label>
             </div>
           </div>
-          <div class="comment">
+          <div class="profile__comment comment">
             <div class="comment__wrapper">
               <p class="comment__title">Комментарий</p>
               <textarea name="comment" rows="6" cols="150">Расскажите обо всех повадках кота</textarea>
             </div>
           </div>
-          <div class="additionally">
+          <div class="profile__additionally additionally">
             <div class="additionally__wrapper">
               <p class="additionally__title">Дополнительно</p>
               <ul class="additionally__list additionally-control">
@@ -125,7 +125,7 @@
               </ul>
             </div>
           </div>
-          <div class="profile-button">
+          <div class="profile__button profile-button">
             <button class="profile-button__submit" type="submit">Отправить заявку</button>
           </div>
           <p class="profile__required-fields"><sup>*</sup> — Обязательные поля</p>
