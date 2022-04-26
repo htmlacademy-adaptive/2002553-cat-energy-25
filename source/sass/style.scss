@@ -1,1 +1,17 @@
 // Начните писать стили здесь
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./global.scss";
+@import "./index/header.scss";
+@import "./index/site-list.scss";
+@import "./index/promo.scss";
+@import "./index/product-lines.scss";
+@import "./index/product-information.scss";
+@import "./index/example.scss";
+@import "./index/contacts.scss";
+@import "./index/main-footer.scss";
+@import "./catalog/catalog.scss";
+@import "./catalog/add-products.scss";
+@import "./catalog/gift.scss";
+@import "./catalog/contacts-background.scss";
+@import "./form/profile.scss";
