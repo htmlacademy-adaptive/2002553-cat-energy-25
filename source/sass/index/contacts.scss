@@ -1,0 +1,21 @@
+.contacts {
+  margin: 0;
+  padding: 26px 20px;
+}
+
+.contacts__advertisement {
+  margin: 0;
+  padding: 0;
+  font-family: $large-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $gray-color;
+}
+
+.contacts__address {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}

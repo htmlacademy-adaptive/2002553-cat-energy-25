@@ -1,0 +1,34 @@
+.example {
+  margin: 0;
+  padding: 25px 20px 40px 20px;
+  background: $light_grey-color;
+}
+
+.example__title {
+  font-family: $large-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black-color;
+}
+
+.example__cell-inside {
+  font-family: $large-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black-color;
+}
+
+.example__cell-border {
+  font-size: 12px;
+}
+
+.example__result {
+  font-family: $large-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black-color;
+}
