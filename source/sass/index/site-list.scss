@@ -7,3 +7,15 @@
   text-decoration: none;
   color: $black-color;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 478px;
+  }
+}

@@ -1,7 +1,7 @@
 .example {
   margin: 0;
   padding: 25px 20px 40px 20px;
-  background: $light_grey-color;
+  background: $light-grey-color;
 }
 
 .example__title {
@@ -13,6 +13,7 @@
 }
 
 .example__cell-inside {
+  margin: 0;
   font-family: $large-font;
   font-weight: 400;
   font-size: 24px;
@@ -21,6 +22,7 @@
 }
 
 .example__cell-border {
+  margin: 0;
   font-size: 12px;
 }
 
@@ -31,4 +33,36 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black-color;
+}
+
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__wrapper-cell {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper-result {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__wrapper-cell {
+    width: 367px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .example__wrapper-result {
+    display: block;
+  }
 }

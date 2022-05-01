@@ -61,3 +61,25 @@
   background-repeat: no-repeat;
   position: absolute;
 }
+
+.product-information__list {
+  display: grid;
+  row-gap: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .product-information__list {
+    grid-template-columns: 230px 246px;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-information__list {
+    grid-template-columns: 230px 246px 248px 250px;
+    column-gap: 94px;
+  }
+}
