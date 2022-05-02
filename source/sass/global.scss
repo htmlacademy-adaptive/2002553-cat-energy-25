@@ -10,13 +10,12 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $special_dark_grey-color;
+  color: $special-dark-grey-color;
   background-color: $white-color;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 .visually-hidden {
@@ -29,4 +28,3 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
