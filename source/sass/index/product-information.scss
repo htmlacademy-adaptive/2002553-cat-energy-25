@@ -1,5 +1,7 @@
 .product-information {
-  margin: 0 20px 49px 20px;
+  padding: 0 20px 49px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .product-information__title {
@@ -75,11 +77,19 @@
     column-gap: 153px;
     row-gap: 37px;
   }
+
+  .product-information {
+    padding: 0 31px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .product-information__list {
     grid-template-columns: 230px 246px 248px 250px;
     column-gap: 94px;
+  }
+
+  .product-information {
+    padding: 0 110px;
   }
 }

@@ -1,6 +1,6 @@
 .contacts {
   margin: 0;
-  padding: 26px 20px;
+  padding: 0;
 }
 
 .contacts__advertisement {
@@ -21,6 +21,21 @@
 }
 
 .contacts__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 26px 20px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 0 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    padding: 0 110px;
+  }
 }

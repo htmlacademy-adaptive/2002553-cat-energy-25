@@ -1,6 +1,6 @@
 .example {
   margin: 0;
-  padding: 25px 20px 40px 20px;
+  padding: 0;
   background: $light-grey-color;
 }
 
@@ -36,6 +36,9 @@
 }
 
 .example__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 25px 20px 40px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -54,12 +57,17 @@
   .example__wrapper-cell {
     width: 367px;
   }
+
+  .example__wrapper {
+    padding: 0 31px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example__wrapper {
     display: flex;
     flex-direction: row;
+    padding: 0 110px;
   }
 
   .example__wrapper-result {
