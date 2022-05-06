@@ -1,7 +1,6 @@
 .product-lines__item {
   margin: 20px;
-  background-color: $basic-grey-color ;
-  padding-left: 20px;
+  background-color: $basic-grey-color;
   background-image: url("../../img/cat-icon-1.svg");
   background-repeat: no-repeat;
   background-position: top 24px left 20px;
@@ -59,13 +58,23 @@
 }
 
 .product-lines__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .product-lines__wrapper {
+    padding: 0 31px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .product-lines__wrapper {
     display: flex;
     flex-direction: row;
+    padding: 0 110px;
   }
 }

@@ -8,3 +8,21 @@
   background: $basic-green-color;
   border: none;
 }
+
+
+.profile-button__required-fields {
+  line-height: 16px;
+  color: $black-color;
+}
+
+.profile-button {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .profile-button {
+    display: flex;
+    flex-direction: row;
+  }
+}

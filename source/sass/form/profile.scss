@@ -5,6 +5,8 @@
 
 .profile__wrapper {
   padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .profile__title {
@@ -46,32 +48,29 @@
   color: $dark-grey-color;
 }
 
-.profile-contacts__title {
-  font-family: $large-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: $black-color;
+.profile__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.profile-contacts__content {
-  font-family: $large-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+.profile__information {
+  display: flex;
+  flex-direction: column;
 }
 
-.profile-contacts__input {
-  font-family: $large-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $special-dark-grey-color;
+@media (min-width: $tablet-width) {
+  .profile__wrapper {
+    padding: 0 31px;
+  }
 }
 
-.profile__required-fields {
-  line-height: 16px;
-  color: $black-color;
+@media (min-width: $desktop-width) {
+  .profile__form-container {
+    display: flex;
+  }
+
+  .profile__wrapper {
+    padding: 0 110px;
+  }
 }

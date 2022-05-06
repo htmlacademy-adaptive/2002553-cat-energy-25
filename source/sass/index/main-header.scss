@@ -15,12 +15,18 @@
 }
 
 .main-header__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 @media (min-width: $tablet-width) {
+  .main-header {
+    padding: 24px 30px 10px 20px;
+  }
+
   .main-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -40,6 +46,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header {
+    padding: 53px 110px 17px;
+  }
+
   .main-header__logo {
     width: 202px;
     height: 59px;
