@@ -1,0 +1,17 @@
+.border {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .border {
+    display: block;
+    background-color: $grey-color;
+    height: 1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .border {
+    display: none;
+  }
+}
