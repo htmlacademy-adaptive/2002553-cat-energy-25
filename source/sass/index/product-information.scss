@@ -1,15 +1,29 @@
 .product-information {
-  padding: 0 20px 49px 20px;
+  padding: 0 20px 53px 20px;
   max-width: 1440px;
   margin: 0 auto;
 }
 
 .product-information__title {
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
   font-family: $large-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $black-color;
+}
+
+.product-information__items {
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-left: 80px;
+}
+
+.product-information__items:first-child {
+  padding-top: 0;
 }
 
 .product-information__item-first {
@@ -22,6 +36,7 @@
   height: 60px;
   background-image: url("../../img/green-box-1.svg");
   background-repeat: no-repeat;
+  left: 0;
   position: absolute;
 }
 
@@ -35,6 +50,7 @@
   height: 60px;
   background-image: url("../../img/green-box-2.svg");
   background-repeat: no-repeat;
+  left: 0;
   position: absolute;
 }
 
@@ -48,6 +64,7 @@
   height: 60px;
   background-image: url("../../img/green-box-3.svg");
   background-repeat: no-repeat;
+  left: 0;
   position: absolute;
 }
 
@@ -61,35 +78,139 @@
   height: 60px;
   background-image: url("../../img/green-box-4.svg");
   background-repeat: no-repeat;
+  left: 0;
   position: absolute;
 }
 
-.product-information__list {
+.product-information__checklist {
+  margin: 0;
+  padding: 0;
+  padding-top: 42px;
   display: grid;
   row-gap: 20px;
   list-style: none;
-  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .product-information__list {
-    grid-template-columns: 230px 246px;
+  .product-information {
+    padding: 0 31px;
+  }
+
+  .product-information__title {
+    padding-top: 45px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .product-information__checklist {
+    margin-top: 32px;
+    margin-bottom: 47px;
+    display: grid;
+    grid-template-columns: 247px 249px;
+    grid-template-rows: 280px 280px;
     column-gap: 153px;
     row-gap: 37px;
   }
 
-  .product-information {
-    padding: 0 31px;
+  .product-information__items {
+    margin: 0;
+    padding: 0;
+    padding-top: 151px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .product-information__items:first-child {
+    padding-top: 151px;
+  }
+
+  .product-information__item-first::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+
+  .product-information__item-first::after {
+    z-index: -1;
+    content: "";
+    width: 112px;
+    height: 280px;
+    background-image: url("../../img/background-number-1.svg");
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 118px;
+    position: absolute;
+  }
+
+  .product-information__item-second::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+
+  .product-information__item-second::after {
+    z-index: -1;
+    content: "";
+    width: 134px;
+    height: 280px;
+    background-image: url("../../img/background-number-2.svg");
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 112px;
+    position: absolute;
+  }
+
+  .product-information__item-third::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+
+  .product-information__item-third::after {
+    z-index: -1;
+    content: "";
+    width: 134px;
+    height: 280px;
+    background-image: url("../../img/background-number-3.svg");
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 113px;
+    position: absolute;
+  }
+
+  .product-information__item-fourth::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+  }
+
+  .product-information__item-fourth::after {
+    z-index: -1;
+    content: "";
+    width: 136px;
+    height: 280px;
+    background-image: url("../../img/background-number-4.svg");
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 113px;
+    position: absolute;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .product-information__list {
+  .product-information__checklist {
     grid-template-columns: 230px 246px 248px 250px;
+    grid-template-rows: 280px;
     column-gap: 94px;
+    margin-top: 32px;
+    margin-bottom: 26px;
   }
 
   .product-information {
     padding: 0 110px;
+  }
+
+  .product-information__title {
+    padding-top: 71px;
   }
 }

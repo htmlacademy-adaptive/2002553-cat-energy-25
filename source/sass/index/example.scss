@@ -5,11 +5,20 @@
 }
 
 .example__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
   font-family: $large-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $black-color;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
 }
 
 .example__cell-inside {
@@ -19,37 +28,72 @@
   font-size: 24px;
   line-height: 24px;
   color: $black-color;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .example__cell-border {
+  position: absolute;
   margin: 0;
+  width: 80px;
   font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  top: 46px;
+  left: 14px;
+  text-transform: lowercase;
+  padding: 0 8px;
+  background: $light-grey-color;
 }
 
 .example__result {
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
   font-family: $large-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $black-color;
 }
 
 .example__wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 25px 20px 40px 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
 }
 
 .example__wrapper-cell {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
 }
 
+.example__wrapper-result {
+  padding-top: 20px;
+}
+
+.example__cell {
+  width: 44%;
+  position: relative;
+}
+
+.example__wrapper-pic {
+  padding: 40px 0;
+}
+
 @media (min-width: $tablet-width) {
   .example__wrapper-result {
+    padding-top: 54px;
     display: flex;
     justify-content: space-between;
   }
@@ -61,16 +105,86 @@
   .example__wrapper {
     padding: 0 31px;
   }
+
+  .example__title {
+    padding-top: 43px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    padding-top: 63px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__cell-inside {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 20px;
+  }
+
+  .example__cell-border {
+    width: 140px;
+    font-size: 14px;
+    line-height: 14px;
+    background: $white-color;
+    top: 66px;
+    left: 10px;
+    padding: 0;
+  }
+
+  .example__result {
+    padding-top: 10px;
+    width: 176px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example__wrapper-pic {
+    padding-top: 85px;
+    padding-bottom: 56px;
+  }
+
+  .example {
+    background: linear-gradient(to bottom, $white-color 57%, $light-grey-color 57%);
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to bottom, $white-color 28%, $light-grey-color 28%);
+  }
+
   .example__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0 110px;
   }
 
   .example__wrapper-result {
     display: block;
+  }
+
+  .example__description {
+    padding-top: 146px;
+    max-width: 436px;
+  }
+
+  .example__cell-border {
+    background: $light-grey-color;
+  }
+
+  .example__result {
+    padding-top: 60px;
+    padding-bottom: 75px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .example__wrapper-pic {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
